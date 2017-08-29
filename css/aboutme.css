@@ -1,0 +1,361 @@
+/******************************************
+/* SETUPsSs
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+
+}
+
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 100%;
+	margin: auto;
+}
+
+/*header*/
+
+header {
+  border: 0px solid #f1f3f5;
+  width: 100%;
+  clear: both;
+  background-color: white;
+  height: 855px;
+}
+
+/*navbar*/
+
+#navbar {
+  border: 1px solid white;
+  width: 100%;
+  background-color: pink;
+}
+
+nav li {
+  display: inline;
+  margin-left: 100px;
+}
+
+nav a {
+  text-decoration: none;
+  color: grey;
+}
+
+/*contact form*/
+.email {
+  padding: 5px;
+  width: 7%;
+  border-radius: 6px;
+  background-color: grey;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  opacity: 1;
+  font-family: 'Roboto Slab', serif;
+  margin-left: 35%;
+}
+
+/*content in header*/
+
+header img {
+  width: 23%;
+  margin-left: 170px;
+  margin-top: 160px;
+  margin-bottom: 0px;
+}
+
+
+header h2, header p, .firstImage, header span {
+  margin-left: 130px;
+  color: 	#808080;
+
+}
+
+header h2 {
+  color: pink;
+  font-size: 1.6em;
+  margin-top: 20px;
+}
+
+header p {
+  width: 24%;
+  margin-bottom: 20px;
+  border-left: 2px solid grey;
+  padding: 0 0 0 15px;
+  font-family: 'Bitter',serif;
+  font-size: 1.18em;
+  color: #a9a9a9;
+
+}
+
+
+p + img {
+  margin-left: 780px;
+  position: relative;
+  bottom: 810px;
+  width: 30%;
+}
+
+
+
+p + p + p {
+  margin-top: 8px;
+}
+
+
+
+
+/*fourth section */
+
+
+/*footer */
+
+footer {
+  border: 1px solid white;
+  width: 100%;
+  clear: both;
+  background-color: #A9A9A9;
+  height: 300px;
+  margin-top: 850px;
+}
+
+.signUp {
+  border: 1px solid #F3F7F6;
+  width: 100%;
+  background-color: #F3F7F6;
+  height: 60px;
+}
+
+.signUp h2 {
+  margin-left: 110px;
+  color: pink;
+  font-size: 1.8em
+}
+
+/*copyright section */
+.copyright {
+  background-color: #A9A9A9;
+  border-bottom: 1px solid white;
+  width: 80%;
+  margin-left: 60px;
+}
+.copyright ul {
+  list-style-type: none;
+}
+
+.copyright li {
+  display: inline;
+  color: white;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: white;
+}
+
+.footerLinks {
+  float: right;
+  margin-right: 30px;
+}
+
+.leaves {
+  height: 50%;
+  width: 30%;
+}
+
+@media only screen and (max-width: 568px) {
+
+  header {
+    border: 0px solid #f1f3f5;
+    width: 100%;
+    clear: both;
+    background-color: white;
+    height: 2055px;
+  }
+
+  /*navbar*/
+
+  #navbar {
+    border: 1px solid white;
+    width: 100%;
+    background-color: pink;
+  }
+
+  nav li {
+    display: inline;
+    margin-left: 10px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: grey;
+  }
+
+  /*contact form*/
+  .email {
+    padding: 5px;
+    width: 7%;
+    border-radius: 6px;
+    background-color: grey;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    opacity: 1;
+    font-family: 'Roboto Slab', serif;
+    margin-left: 75%;
+    text-decoration: none;
+  }
+
+  /*content in header*/
+
+  header img {
+    width: 63%;
+    margin-left: 90px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+  }
+
+
+  header h2, header p, .firstImage, header span {
+    margin-left: 30px;
+    color: 	#808080;
+
+  }
+
+  header h2 {
+    color: pink;
+    font-size: 1.6em;
+    margin-top: 20px;
+  }
+
+  header p {
+    width: 54%;
+    margin-bottom: 20px;
+    border-left: 2px solid grey;
+    padding: 0 0 0 15px;
+    font-family: 'Bitter',serif;
+    font-size: 1.18em;
+    color: #a9a9a9;
+
+  }
+
+
+  p + img {
+    margin-left: 250px;
+    position: relative;
+    bottom: 910px;
+    width: 30%;
+  }
+
+
+
+  p + p + p {
+    margin-top: 8px;
+  }
+
+  /*fourth section */
+
+
+  /*footer */
+
+  footer {
+    border: 1px solid white;
+    width: 100%;
+    clear: both;
+    background-color: #A9A9A9;
+    height: 130px;
+    margin-top: 130px;
+  }
+
+  .signUp {
+    border: 1px solid #F3F7F6;
+    width: 100%;
+    background-color: #F3F7F6;
+    height: 60px;
+  }
+
+  .signUp h2 {
+    margin-left: 110px;
+    color: pink;
+    font-size: 1.8em
+  }
+
+
+
+  /*copyright section */
+  .copyright {
+    background-color: #A9A9A9;
+    border-bottom: 1px solid white;
+    width: 90%;
+    margin-left: 30px;
+  }
+  .copyright ul {
+    list-style-type: none;
+  }
+
+  .copyright li {
+    display: inline;
+    color: white;
+  }
+
+  .copyright a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .footerLinks {
+    float: right;
+    margin-right: 30px;
+  }
+
+  .leaves {
+    height: 30%;
+    width: 30%;
+  }
+
+
+}

@@ -1,0 +1,341 @@
+/******************************************
+/* SETUPsSs
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+
+}
+
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 100%;
+	margin: auto;
+}
+
+/*header*/
+
+header {
+  border: 1px solid #f1f3f5;
+  width: 100%;
+  clear: both;
+  background-color: white;
+}
+
+/*navbar*/
+
+#navbar {
+  border: 1px solid white;
+  width: 100%;
+  background-color: pink;
+}
+
+nav li {
+  display: inline;
+  margin-left: 100px;
+}
+
+nav a {
+  text-decoration: none;
+  color: grey;
+}
+
+/*contact form*/
+.email {
+  padding: 5px;
+  width: 7%;
+  border-radius: 6px;
+  background-color: tan;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  opacity: 1;
+  font-family: 'Roboto Slab', serif;
+  margin-left: 47.8%;
+  text-decoration: none;
+}
+
+
+
+
+/*first section*/
+
+h1 {
+  text-align: center;
+  color: tan;
+
+}
+
+span {
+  position: relative;
+  left: 584px;
+  font-size: 1.4em;
+  color: tan;
+}
+
+#firstSection {
+  border: 1px solid tan;
+  width: 100%;
+  float: none;
+  height: 200px;
+  background-image: url("../images/tree_bird.png");
+}
+
+h2 {
+  text-align: center;
+  color: tan;
+  font-size: 1.15em;
+}
+
+.links {
+  list-style-type: none;
+}
+
+div li {
+  display: inline;
+  position: relative;
+  left: 597px;
+  top: 15px;
+}
+
+a {
+  color: tan;
+  text-decoration: none;
+}
+
+/*second section*/
+
+iframe {
+  width: 100%;
+  height: 800px;
+}
+
+
+/*footer */
+
+footer {
+  border: 1px solid white;
+  width: 100%;
+  clear: both;
+  background-color: #A9A9A9;
+  height: 250px;
+}
+
+.leaves {
+  height: 50%;
+  width: 30%;
+}
+
+.signUp {
+  border: 1px solid #F3F7F6;
+  width: 100%;
+  background-color: #F3F7F6;
+  height: 60px;
+}
+
+.signUp h2 {
+  text-align: center;
+  color: pink;
+  font-size: 1.8em
+
+}
+
+
+/*copyright section */
+.copyright {
+  background-color: #A9A9A9;
+  border-bottom: 1px solid white;
+  width: 80%;
+  margin-left: 60px;
+}
+
+.copyright ul {
+  list-style-type: none;
+}
+
+.copyright li {
+  display: inline;
+  color: white;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: white;
+}
+
+.footerLinks {
+  float: right;
+  margin-right: 30px;
+}
+
+
+
+@media only screen and (max-width: 568px) {
+
+  /*navbar*/
+
+  #navbar {
+    border: 1px solid white;
+    width: 100%;
+    background-color: pink;
+  }
+
+  nav li {
+    display: inline;
+    margin-left: 10px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: grey;
+  }
+
+  /*contact form*/
+  .email {
+    padding: 5px;
+    width: 7%;
+    border-radius: 6px;
+    background-color: grey;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    opacity: 1;
+    font-family: 'Roboto Slab', serif;
+    margin-left: 43%;
+    text-decoration: none;
+  }
+
+  /*first section*/
+
+  h1 {
+    text-align: center;
+    color: tan;
+
+  }
+
+  span {
+    position: relative;
+    left: 144px;
+    font-size: 1.4em;
+    color: tan;
+  }
+
+  #firstSection {
+    border: 1px solid tan;
+    width: 100%;
+    float: none;
+    height: 200px;
+    background-image: url("../images/cat.png");
+  }
+
+  h2 {
+    text-align: center;
+    color: tan;
+    font-size: 1.15em;
+  }
+
+  .links {
+    list-style-type: none;
+  }
+
+  div li {
+    display: inline;
+    position: relative;
+    left: 155px;
+    top: 15px;
+  }
+
+  a {
+    color: tan;
+    text-decoration: none;
+  }
+
+  /*footer */
+
+  footer {
+    border: 1px solid white;
+    width: 100%;
+    clear: both;
+    background-color: #A9A9A9;
+    height: 100px;
+  }
+
+  .leaves {
+    height: 50%;
+    width: 30%;
+  }
+
+
+
+  /*copyright section */
+  .copyright {
+    background-color: #A9A9A9;
+    border-bottom: 1px solid white;
+    width: 95%;
+    margin-left: 10px;
+  }
+
+  .copyright ul {
+    list-style-type: none;
+  }
+
+  .copyright li {
+    display: inline;
+    color: white;
+  }
+
+  .copyright a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .footerLinks {
+    float: right;
+    margin-right: 20px;
+  }
+
+}
